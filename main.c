@@ -1,4 +1,3 @@
-//Codigo escrito por Alejandro Carballo - EC 1 Ing Informatica
 #include <stdio.h>
 
 int main() {
@@ -19,8 +18,19 @@ int main() {
         scanf("%f", &radio);
         printf("\nIntroduce la altura: ");
         scanf("%f", &altura);
-        float volcono = (1/3) * (3.1415) * (radio*radio) * altura;
-        printf("%s %f", "Volumen del cono: ", volcono);
+        float volCono = (3.1415 / 3) * (radio * radio) * altura;
+        printf("%s %f", "Volumen del cono: ", volCono);
+    }
+
+    if (opcion == 2) {
+        printf("\nIntroduce el lado 1: ");
+        scanf("%f", &lado1);
+        printf("\nIntroduce el lado 2: ");
+        scanf("%f", &lado2);
+        printf("\nIntroduce la altura: ");
+        scanf("%f", &altura);
+        float volOrtoedro = lado1 * lado2 * altura;
+        printf("%s %f", "Volumen del ortoedro: ", volOrtoedro);
     }
 
     return 0;
